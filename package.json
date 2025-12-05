@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run build && (npm run start:next & npm run bot)",
+    "start:next": "next start",
     "lint": "next lint",
     "bot": "ts-node --compiler-options {\\\"module\\\":\\\"commonjs\\\"} bot/index.ts"
   },
